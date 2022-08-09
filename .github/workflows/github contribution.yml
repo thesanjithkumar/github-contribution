@@ -1,0 +1,20 @@
+name: Generate Commits
+
+on:
+  schedule:
+    - cron: "30 12 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: konradlinkowski/contributionsgenerator@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          GIT_NAME: Sanjith Kumar
+          GIT_EMAIL: sanjithkumar048@gmail.com
+          COMMITS: 3
