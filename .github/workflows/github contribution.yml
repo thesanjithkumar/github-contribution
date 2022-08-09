@@ -17,4 +17,4 @@ jobs:
         with:
           GIT_NAME: Sanjith Kumar
           GIT_EMAIL: sanjithkumar048@gmail.com
-          COMMITS: 3
+          COMMITS: 2
