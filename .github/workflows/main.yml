@@ -12,3 +12,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         GIT_EMAIL: sanjithkumar048@gmail.com # replace me
+        MAX_DAYS: 365
+        MIN_COMMITS_PER_DAY: 1
+        MAX_COMMITS_PER_DAY: 5
